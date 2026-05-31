@@ -1,0 +1,16 @@
+app.js
+let cart = [];
+
+function add(name, price){
+  cart.push({name, price});
+  alert(name + " added to bag ✨");
+}
+
+function openCheckout(){
+  localStorage.setItem("cart", JSON.stringify(cart));
+  window.location.href = "checkout.html";
+}
+
+function loadCart(){
+  return JSON.parse(localStorage.getItem("cart") || "[]");
+}

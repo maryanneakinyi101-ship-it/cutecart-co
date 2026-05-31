@@ -1,0 +1,58 @@
+Styles.css
+body{
+  margin:0;
+  font-family:Inter;
+  background:#f7f3f8;
+  color:#1c1c1c;
+}
+
+h1,h2,h3{
+  font-family:"Playfair Display";
+}
+
+.nav{
+  position:fixed;
+  top:0;
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  padding:20px 40px;
+  background:rgba(255,255,255,0.6);
+  backdrop-filter:blur(10px);
+}
+
+a{
+  text-decoration:none;
+  color:#1c1c1c;
+  margin:0 10px;
+}
+
+.container{
+  padding:120px 60px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:30px;
+}
+
+.card{
+  background:white;
+  padding:20px;
+  border-radius:16px;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+}
+
+button{
+  padding:12px;
+  border:none;
+  border-radius:12px;
+  background:linear-gradient(135deg,#c8a7ff,#f3b6d9);
+  color:white;
+  cursor:pointer;
+}

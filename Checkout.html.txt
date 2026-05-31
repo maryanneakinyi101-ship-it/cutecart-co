@@ -1,0 +1,46 @@
+Checkout.html
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Checkout</h1>
+
+<div id="items"></div>
+
+<h2>Delivery Details</h2>
+
+<input placeholder="Name"><br><br>
+<input placeholder="Phone"><br><br>
+<input placeholder="Location"><br><br>
+
+<h2>Payment</h2>
+<p>Pay via M-Pesa manually after order confirmation.</p>
+
+<button onclick="alert('Order placed ✨')">Place Order</button>
+
+</div>
+
+<script>
+let cart = JSON.parse(localStorage.getItem("cart") || "[]");
+let html = "";
+let total = 0;
+
+cart.forEach(i=>{
+  html += i.name + " - KES " + i.price + "<br>";
+  total += i.price;
+});
+
+html += "<br><b>Total: KES " + total + "</b>";
+
+document.getElementById("items").innerHTML = html;
+</script>
+
+</body>
+</html>

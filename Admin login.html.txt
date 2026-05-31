@@ -1,0 +1,23 @@
+Admin login.html
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Admin Login</h1>
+
+<input placeholder="Email"><br><br>
+<input type="password" placeholder="Password"><br><br>
+
+<a href="admin.html"><button>Login</button></a>
+
+</div>
+
+</body>
+</html>

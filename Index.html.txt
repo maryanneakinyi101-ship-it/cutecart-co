@@ -1,0 +1,30 @@
+Index.html
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="nav">
+  <div>CUTCART CO</div>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="checkout.html">Bag</a>
+  </div>
+</div>
+
+<div class="container">
+
+<h1>Soft Luxury for the Modern Girl</h1>
+<p>Curated aesthetic essentials ✨</p>
+
+<a href="shop.html"><button>Enter Shop</button></a>
+
+</div>
+
+</body>
+</html>
